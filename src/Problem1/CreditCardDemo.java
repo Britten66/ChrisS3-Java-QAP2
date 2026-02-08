@@ -1,3 +1,7 @@
+package Problem1;
+
+import Problem1.CreditCard;
+
 public class CreditCardDemo {
 
     public static void main(String[] args) {
