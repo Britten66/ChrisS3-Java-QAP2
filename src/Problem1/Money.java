@@ -5,6 +5,7 @@
 // 02/05/2026
 //desc: this is a Java program that will define the full address along with postal address
 
+package Problem1;
 
 
 public class Money {

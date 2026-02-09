@@ -6,6 +6,7 @@
 //desc: this is a Java program that will define the full adress along with postal address
 
 
+package Problem1;
 
 public class Person {
 
