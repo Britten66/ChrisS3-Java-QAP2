@@ -1,4 +1,15 @@
-package Problem2;
+
+//QAP2 Java SD 15 Keyin
+// by Christopher Britten
+// 02/05/2026
+//desc: this is a Java program that will define the full adress along with postal address
+
+package Problem3;
+
+//importing
+import Problem2.MyPoint;
+
+
 
 public class MyRectangle {
 

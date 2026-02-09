@@ -42,7 +42,7 @@ public class CreditCard {
 
 
         if(newBalance.compareTo(creditLimit) > 0) {
-            System.out.println("Err-Credit Limit Reached.");
+            System.out.println("Exceeds credit limit");
         }else {
             balance.add(amount);
             System.out.println("Charge: " + amount);

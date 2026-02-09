@@ -116,7 +116,7 @@ public Money(int dollars, int cents){
         //pushing to string
 
     public String toString(){
-    return "$" + dollars + "." + cents;
+    return "$" + dollars + "." + String.format("%02d",cents);
     }
 
 
