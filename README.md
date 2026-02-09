@@ -1,29 +1,47 @@
-# ChrisS3-Java-QAP2
-Java assessment covering object composition and aggregation. 
-
-# QAP 2Java (Campus Map)
-
-## Project Description
-[cite_start]This project demonstrates **Object-Oriented Programming (OOP)** concepts like **Aggregation** and **Composition** using Java[cite: 31, 32, 132]. [cite_start]I have built a system that models a University Campus by combining simpler objects (Points and Shapes) into complex systems (Credit Cards and Campus Maps)[cite: 36, 133].
-
-## Project Structure
-The project is organized into packages to keep the code clean and modular:
-
-* [cite_start]**Financial Classes**: `Money` and `CreditCard` (Handles secure transactions and balances)[cite: 45, 54].
-* [cite_start]**Geometry Classes**: `MyPoint`, `MyLine`, `MyCircle`, and `MyRectangle` (The building blocks for the map)[cite: 113, 124, 136].
-* [cite_start]**Campus System**: `CampusMap` (Aggregates the shapes to create a full campus layout)[cite: 133, 138].
-
-## Key Features
-* [cite_start]**Aggregation**: Building a `CreditCard` that "has a" `Person` and `Money`[cite: 36, 37].
-* [cite_start]**Logic**: Calculating total walkway lengths and fountain areas across the campus[cite: 148, 150].
-* [cite_start]**Security**: Using copy constructors to ensure data isn't accidentally changed when passing objects[cite: 40, 59].
-
-## How to Run
-1.  Clone the repository.
-2.  Compile all files: `javac *.java`
-3.  Run the test drivers:
-    * [cite_start]`java CreditCardDemo` [cite: 75]
-    * [cite_start]`java TestCampusMap` [cite: 165]
+# QAP 2 - Java
+**Chris Britten | SD15 | Keyin College | Feb 2026**
 
 ---
-[cite_start]*Completed by Christopher Britten -SD 15  Keyin College (2026)*[cite: 3, 5].
+
+## What This Is
+Four Java problems focusing on object composition and aggregation. Built a CreditCard system, classes, and a CampusMap that puts it all together.
+
+## The Problems
+
+**Problem 1 - CreditCard System**
+Address → Person → Money → CreditCard. Each class builds on the last. Learned copy constructors here to keep data safe.
+
+**Problem 2 - MyPoint & MyLine**
+Points with x,y coordinates. Lines connect two points. Distance formula stuff.
+
+**Problem 3 - MyRectangle**
+Two points make a rectangle. Calculate area, perimeter, etc.
+
+**Problem 4 - CampusMap**
+The big one. Buildings are rectangles, walkways are lines, fountains are circles. Add them to a map, calculate totals.
+
+## Running It
+```
+java Problem1.CreditCardDemo
+java Problem2.MyLineTest
+java Problem3.MyRectangleTest
+java Problem4.CampusMapTest
+```
+
+## Hours
+- Problem 1: ~3 hrs (hardest, most new concepts)
+- Problem 2: ~1 hr
+- Problem 3: ~30 min
+- Problem 4: ~1.5 hrs
+- **Total: around 6 hours**
+
+## Resources
+- Class notes
+- GeeksforGeeks
+- W3
+- LLM/Google for debugging and explanations
+
+## Thoughts
+Problem 1 was rough — lots of moving parts. 
+By Problem 3 I had the pattern down and it went faster. 
+Problem 4 was just combining everything which made sense once the pieces were built.
