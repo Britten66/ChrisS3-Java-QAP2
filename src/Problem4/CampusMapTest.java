@@ -44,11 +44,9 @@ public class CampusMapTest {
 
 
         // adding walkway between buildings
-
         campus.addWalkway(Library, Lobby);
 
         //output here
-
         System.out.println("Total walkway length: " + campus.walkwayLength());
         System.out.println("Total fountain area: " + campus.fountainArea());
         System.out.println("Library to Lobby Path Open: " + campus.isWalkway(Library, Lobby));

@@ -13,30 +13,35 @@ import Problem3.MyRectangle;
 import java.util.ArrayList;
 public class CampusMap {
 
-
+//making lists here
     private ArrayList<MyRectangle> building;
     private ArrayList<MyLine> walkway;
-    private ArrayList<MyCircle> fountains;
+    private ArrayList<MyCircle> fountain;
+
+    //default here
 
     public CampusMap() {
         building = new ArrayList<>();
         walkway = new ArrayList<>();
-        fountains = new ArrayList<>();
+        fountain = new ArrayList<>();
     }
 
-    public void addBuilding(MyRectangle newBuilding) {
-        building.add(newBuilding);
+    //appending methods that call newBuilding as a new name to make this less confusing
 
+    public void addBuilding(MyRectangle newBuilding) {
+
+        building.add(newBuilding);
     }
 
     public void addFountain(MyCircle newFountain) {
-        fountains.add(newFountain);
+
+        fountain.add(newFountain);
     }
 
     //this is going to be using a parameterized constructor
     public void addWalkway(MyRectangle from, MyRectangle to) {
 
-        //both buuilding need to exist for walkway to be present
+        //both building need to exist for walkway to be present
 
         //handler here for connecting walkway to buildings
 
@@ -69,10 +74,14 @@ public class CampusMap {
     }
 
 
+
+
     public double fountainArea() {
         double total = 0;
-        for (MyCircle fountain : fountains) {
-            total += fountain.getArea();
+
+
+        for (MyCircle f : fountain) {
+            total += f.getArea();
         }
         return total;
     }
@@ -82,9 +91,10 @@ public class CampusMap {
         MyPoint fromCenter = getCenter(from);
         MyPoint toCenter = getCenter(to);
 
-        //for loop handler with if statnment
+        //for loop handler with if statement
 
         for (MyLine w : walkway) {
+
             if (w.getBegin().equals(fromCenter) && w.getEnd().equals(toCenter)) {
                 return true;
             }
