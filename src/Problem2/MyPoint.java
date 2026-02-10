@@ -53,11 +53,11 @@ public class MyPoint {
     }
 
     // did not have correct and have to add this last second
-    // handler to  check if points are equal
     // was returning false every time
     public String toString() {
         return "(" + x + ", " + y + ")";
     }
+    // handler to  check if points are equal
 
     public boolean equals(Object obj) {
         if (obj instanceof MyPoint) {
